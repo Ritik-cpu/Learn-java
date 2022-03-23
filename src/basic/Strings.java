@@ -23,6 +23,27 @@ public class Strings {
         System.out.println(s6);
 
         //string methods
+        //find length of string
+        int len=s2.length();
+        System.out.println(len);
+
+        //return the character at ith index
+        char c=s3.charAt(4);
+        System.out.println(c);
+
+        //substring from ith to end
+        String s7=s2.substring(3);
+        String s8=s2.substring(3,7);
+        System.out.print(s7+"\n"+s8+"\n"+s7.concat(s8));
+
+        int index=s2.indexOf("s");
+        int fnd=s2.indexOf("i",3);
+        System.out.println(index);
+        System.out.println(fnd);
+
+        int output = s2.lastIndexOf("i");
+
+
 
 
 
