@@ -1,5 +1,4 @@
 package basic;
-import java.util.*;
 
 class Student{
     int roll_no;
@@ -9,6 +8,34 @@ class Student{
         this.name=name;
 
     }
+}
+
+class ArrayProblem{
+    //maximum element of array
+    int ArrMax(int[] ar){  // 4 5 6 5 8 9 7 4 6
+        int max=0;
+        for(int i=0;i< ar.length;i++){
+            if(ar[i]>max){
+                max=ar[i];
+            }
+        }
+        return max;
+    }
+    //sum of array
+    int sumArr(int [] ar){ //1 5 4 6 7
+        int sum=0;
+        for(int i=0; i<ar.length;i++){
+            sum=ar[i]+sum;
+
+        }
+        return sum;
+    }
+
+    int Fibo(){
+        return 0;
+    }
+
+
 }
 public class Array1 {
     public static void main(String args[]){
@@ -29,12 +56,14 @@ public class Array1 {
             System.out.println(arr[i].roll_no+" "+arr[i].name);
         }
 
-        //Arrays class in Java
-        int Arr[]={10,20,3,0,4,56,66,4,45,66};
-        int Arr2[]={10,33,4,4,56,6,5,55,8};
-        System.out.println(Arrays.compare(Arr,Arr2));
-        System.out.println( Arrays.asList(Arr));
+        //array problem
+        int[] list={4,5,6,7,8,9,41,2,3,4,5};
+        ArrayProblem A1 = new ArrayProblem();
+        int maxValue=A1.ArrMax(list);
+        int sumValue=A1.sumArr(list);
+        System.out.println("the maximum is :" +maxValue);
+        System.out.println("the sum is: "+sumValue);
 
-
+        //fibonacci series
     }
 }

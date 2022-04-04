@@ -19,13 +19,23 @@ class Bubble{
     }
 }
 
+class Selection{
+    void selection(int ar[]){
+
+        for(int i=0; i<ar.length-1;i++){
+
+
+        }
+    }
+}
+
 class BasicSort{
     public static void main(String args[]){
         //lets define bubble sort
         int arr[]={4,5,11,7,8,2,9};
          Bubble b1= new Bubble();
         b1.bubble(arr);
-        System.out.println("\nsorted!");
+        System.out.println("\n Bubble sorted!");
 
 
     }

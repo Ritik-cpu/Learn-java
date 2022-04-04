@@ -65,7 +65,7 @@ public class Strings {
         System.out.println(count);
 
         for(int i=0;i<count;i++){
-            System.out.println("tocken at index: ["+i+"]"+tocken.nextToken());
+            System.out.println("token at index: ["+i+"]"+tocken.nextToken());
 
         }
 
