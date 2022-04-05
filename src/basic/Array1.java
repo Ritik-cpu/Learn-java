@@ -32,9 +32,18 @@ class ArrayProblem{
     }
 
     int Fibo(){
+
         return 0;
     }
 
+    // sum of two array ar1 and ar2
+    void twoArrAdd(int[] arr1, int[]arr2,int lengths){
+        System.out.println("the sum of array:");
+        for(int i=0;i<lengths;i++ ){
+            System.out.println( arr1[i]+arr2[i]);
+        }
+
+    }
 
 }
 public class Array1 {
@@ -63,6 +72,12 @@ public class Array1 {
         int sumValue=A1.sumArr(list);
         System.out.println("the maximum is :" +maxValue);
         System.out.println("the sum is: "+sumValue);
+        // array arr1 add arr2
+        int[] arr1={2,4,6};
+        int[] arr2={3,5,1};
+        int lengths=3;
+        A1.twoArrAdd(arr1,arr2,lengths);
+
 
         //fibonacci series
     }
